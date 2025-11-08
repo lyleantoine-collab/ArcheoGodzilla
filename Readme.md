@@ -1,43 +1,34 @@
-# DigiFlash-Archiver 
+# ArcheoGodzilla™  
+### *“From Dust to Digital. From Silence to Speech. From Lost to Found.”*  
+**The world’s first AI-powered universal paleographic decoder**  
+> **Detect → Decode → Decipher → Archive**  
+> **Now with Auto-Script Detection + Lost Language AI**
 
-Quiet, boring, reliable digitization tools for turning paper mountains - and microfiche trays - into searchable archives. '80s vibes, modern under the hood. No drama. Just done. 
+---
 
-## What It Does 
+![ArcheoGodzilla Banner](https://via.placeholder.com/800x200.png?text=ARCHEOGODZILLA+TM)  
+*“I do not fear the tablet. I am the tablet.”*
 
-- Scans paper, slides, microfiche → clean text
-- Tags with timestamps
-- Outputs searchable Markdown
-- Auto-backs up to Git/IPFS (optional)
-No cloud.
-No AI hype.
-Just Dene grit. 
+---
 
-## Quick Start 
+## Features
 
-1. Clone git clone https://github.com/lyleantoine-collab/DigiFlash-Archiver.git cd DigiFlash-Archiver 
-2. Install pip install opencv-python pytesseract pillow scikit-image 
-3. Paper mode python scripts/digi_flash.py --folder scans/ --mode paper 
-4. Microfiche mode python scripts/digi_flash.py --folder fiche_tray/ --mode film 
+| Power | Description |
+|------|-------------|
+| **Auto-Script Detection** | CNN classifier identifies 50+ ancient scripts (cuneiform, Linear B, Voynich, etc.) |
+| **Lost Language AI** | LLM-powered hypothesis engine for undeciphered scripts |
+| **Multimodal OCR** | Kraken + TrOCR + Tesseract + Custom NNs |
+| **Smart Preprocessing** | Upscale 2×, contrast boost, deskew, denoise |
+| **Unicode Transliteration** | Cuneiform → Unicode → English gloss |
+| **Dual Archive + Backup** | Auto-save to `archive/` and `backup/` |
+| **Self-Training Mode** | Learn from your labeled digs |
+| **Field-Ready** | Runs on laptop, tablet, or Raspberry Pi |
 
-## Microfiche Mode 
+---
 
-Drop frames in a folder. 
-Run --mode film. 
-Deblurs dots, OCRs text, timestamps each page. 
-Output: .md per frame. 
-Backup: python scripts/batch_backup.py. 
-Handles faded ink, '50s records, legacy dust - no names. 
-No noise. 
-Just truth. 
+## Supported Scripts
 
-## Roadmap (Ongoing) 
-- [ ] Add Whisper for voice-dirty scans
-- [ ] IPFS auto-pin
-- [ ] Mobile mode – run from phone, scan on-site
-- Microfiche support (live)
-
-Fork. 
-Tweak. 
-Archive. 
-
-Nakehk'o Innovations | Goulds, NL | #ArchiveSovereignty
+```text
+latin, greek, cuneiform, linear_b, hieroglyphs, runic, ogham, 
+braille, voynich, rongorongo, proto-sinaitic, old_persian, 
+mayathan, zapotec, mixtec, rongorongo, indus, phaistos...
