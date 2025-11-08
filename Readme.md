@@ -1,12 +1,9 @@
 # ArcheoGodzilla™  
 ### *“From Dust to Digital. From Silence to Speech. From Lost to Found.”*  
 **The world’s first AI-powered universal paleographic decoder**  
-> **Detect → Decode → Decipher → Archive**  
-> **Now with Auto-Script Detection + Lost Language AI**
+> **Detect → Decode → Decipher → Archive**
 
----
-
-![ArcheoGodzilla Banner](https://via.placeholder.com/800x200.png?text=ARCHEOGODZILLA+TM)  
+![ArcheoGodzilla](https://via.placeholder.com/800x200/1a1a1a/ffffff?text=ARCHEOGODZILLA+TM)  
 *“I do not fear the tablet. I am the tablet.”*
 
 ---
@@ -15,20 +12,21 @@
 
 | Power | Description |
 |------|-------------|
-| **Auto-Script Detection** | CNN classifier identifies 50+ ancient scripts (cuneiform, Linear B, Voynich, etc.) |
-| **Lost Language AI** | LLM-powered hypothesis engine for undeciphered scripts |
-| **Multimodal OCR** | Kraken + TrOCR + Tesseract + Custom NNs |
-| **Smart Preprocessing** | Upscale 2×, contrast boost, deskew, denoise |
-| **Unicode Transliteration** | Cuneiform → Unicode → English gloss |
-| **Dual Archive + Backup** | Auto-save to `archive/` and `backup/` |
-| **Self-Training Mode** | Learn from your labeled digs |
-| **Field-Ready** | Runs on laptop, tablet, or Raspberry Pi |
+| **Auto-Script Detection** | CNN classifier identifies 50+ ancient scripts |
+| **Lost Language AI** | LLM-powered hypothesis for undeciphered scripts |
+| **Multimodal OCR** | Kraken + TrOCR + Tesseract |
+| **Smart Preprocessing** | Upscale 2×, contrast, deskew, denoise |
+| **Dual Archive + Backup** | Auto-save to `godzilla_archive/` + `godzilla_backup/` |
+| **Field-Ready** | Runs on laptop or Raspberry Pi |
 
 ---
 
-## Supported Scripts
+## Quick Start
 
-```text
-latin, greek, cuneiform, linear_b, hieroglyphs, runic, ogham, 
-braille, voynich, rongorongo, proto-sinaitic, old_persian, 
-mayathan, zapotec, mixtec, rongorongo, indus, phaistos...
+```bash
+git clone https://github.com/lyleantoine-collab/ArcheoGodzilla.git
+cd ArcheoGodzilla
+pip install -r requirements.txt
+mkdir -p scans
+# Drop your images in scans/
+python scripts/godzilla.py
